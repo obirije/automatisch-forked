@@ -79,7 +79,7 @@ function LoginForm() {
           sx={{ mb: 1 }}
         />
 
-        {isCloud && (
+
           <Link
             component={RouterLink}
             to={URLS.FORGOT_PASSWORD}
@@ -87,7 +87,7 @@ function LoginForm() {
           >
             {formatMessage('loginForm.forgotPasswordText')}
           </Link>
-        )}
+
 
         <LoadingButton
           type="submit"
@@ -101,7 +101,7 @@ function LoginForm() {
           {formatMessage('loginForm.submit')}
         </LoadingButton>
 
-        {isCloud && (
+
           <Typography variant="body1" align="center" mt={3}>
             {formatMessage('loginForm.noAccount')}
             &nbsp;
@@ -109,7 +109,7 @@ function LoginForm() {
               {formatMessage('loginForm.signUp')}
             </Link>
           </Typography>
-        )}
+
       </Form>
     </Paper>
   );
