@@ -67,18 +67,6 @@ function LoginForm() {
           data-test="email-text-field"
         />
 
-        <TextField
-          label={formatMessage('loginForm.passwordFieldLabel')}
-          name="password"
-          type="password"
-          required
-          fullWidth
-          margin="dense"
-          autoComplete="current-password"
-          data-test="password-text-field"
-          sx={{ mb: 1 }}
-        />
-
 
           <Link
             component={RouterLink}
